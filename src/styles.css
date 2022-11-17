@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+.max-container {
+    max-width: 1440px;
+}
+
+.navbar-margin {
+    margin: 0 70px;
+}
+
+.router-link {
+    cursor: pointer;
+}
