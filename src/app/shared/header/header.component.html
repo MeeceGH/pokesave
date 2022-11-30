@@ -1,16 +1,18 @@
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid max-container navbar-margin">
-        <div class="navbar-header">
-            <a class="navbar-brand router-link" routerLink="/pokemon-list">Pokesave</a>
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid max-container navbar-margin">
+            <div class="navbar-header">
+                <a class="navbar-brand router-link" routerLink="/pokemon-list">Pokesave</a>
+            </div>
+    
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li routerLinkActive="active"><a class="router-link" routerLink="/pokemon-list">Pokemon List</a></li>
+                    <li routerLinkActive="active"><a class="router-link" routerLink="/favorites" [fragment]="'favorites'">Favorites</a></li>
+                    <li><a class="router-link">Login</a></li>
+                    <li *ngIf="false"><a class="router-link">Logout</a></li>
+                </ul>
+            </div>
         </div>
-
-        <div class="navbar-right">
-            <ul class="nav navbar-nav">
-                <li routerLinkActive="active"><a class="router-link" routerLink="/pokemon-list">Pokemon List</a></li>
-                <li routerLinkActive="active"><a class="router-link" routerLink="/favorites">Favorites</a></li>
-                <li><a class="router-link">Login</a></li>
-                <li *ngIf="false"><a class="router-link">Logout</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
+</header>
